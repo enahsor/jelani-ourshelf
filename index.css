@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Rubik:wght@300;500;700&display=swap");
+:root {
+  --bgColor: #f8a1d1;
+  --fontColor: #fff;
+  --buttonBg: #e36bae;
+  --buttonColor: ;
+}
+
+body {
+  background-color: var(--bgColor);
+  font-family: "Rubik", sans-serif;
+  color: var(--fontColor);
+  padding: 2ch 4ch;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2ch;
+  font-weight: normal;
+}
+
+p {
+  font-weight: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  padding: 1ch 1.5ch;
+  border-radius: 5px;
+  color: var(--buttonColor);
+  background-color: var(--buttonBg);
+  cursor: pointer;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  max-width: 900px;
+}
+
+form label {
+  font-weight: 100;
+  font-size: 1ch;
+  margin-bottom: 5px;
+}
+
+textarea::placeholder {
+  font-family: sans-serif;
+}
+form button {
+  margin-top: 20px;
+}
+
+section {
+  margin-bottom: 10ch;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+.fa-bars {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .fa-bars {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
